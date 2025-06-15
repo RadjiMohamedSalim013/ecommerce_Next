@@ -28,7 +28,7 @@ export async function POST(req: Request) {
   return NextResponse.json({ message: "Commande enregistrée" }, { status: 201 })
 }
 
-export async function GET(req: Request) {
+export async function GET() {
   const session = await getServerSession(authOptions)
   if (!session?.user?.email) {
     return NextResponse.json({ message: "Non autorisé" }, { status: 401 })

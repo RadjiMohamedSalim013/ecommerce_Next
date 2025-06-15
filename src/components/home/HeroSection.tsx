@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { ShoppingBasket, ChevronRight } from 'lucide-react'
+import {  ChevronRight } from 'lucide-react'
 
 export default function HeroSection() {
   return (
