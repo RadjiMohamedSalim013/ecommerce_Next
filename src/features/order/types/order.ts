@@ -8,9 +8,9 @@ export type OrderItem = {
 export type Order = {
   _id?: string
   createdAt?: string
-  name: string
+  name?: string
   email: string
-  address: string
+  address?: string
   phone?: string
   items: OrderItem[]
   total: number
