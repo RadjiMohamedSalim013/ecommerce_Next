@@ -12,6 +12,7 @@ export async function getUserOrders(email: string): Promise<Order[]> {
 
   return orders.map(order => ({
     _id: order._id.toString(),
+    email: order.userEmail,
     userEmail: order.userEmail,
     items: order.items,
     total: order.total,
