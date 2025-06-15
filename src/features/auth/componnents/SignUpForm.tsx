@@ -42,8 +42,12 @@ export default function SignUpForm() {
       if (response.status === 201) {
         router.push("/auth/signin?registered=true")
       }
-    } catch (err: any) {
-      setError(err.response?.data?.message || err.message || "Erreur lors de l'inscription")
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setError(err.message)
+      } else {
+        setError("Erreur lors de l'inscription")
+      }
     } finally {
       setLoading(false)
     }

@@ -50,13 +50,6 @@ export default function HeroSection() {
               Explorer nos produits
               <ChevronRight className="h-5 w-5" />
             </Link>
-            <Link
-              href="/about"
-              className="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 backdrop-blur-sm border border-white/20"
-            >
-              <ShoppingBasket className="h-5 w-5" />
-              Notre histoire
-            </Link>
           </div>
         </div>
       </div>

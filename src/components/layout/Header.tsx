@@ -22,7 +22,7 @@ export default function Header() {
           >
             <ShoppingBag className="h-6 w-6 text-emerald-400 group-hover:rotate-12 transition-transform" />
             <span className="text-xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
-              EliteShop
+              PannierIvoire
             </span>
           </Link>
           

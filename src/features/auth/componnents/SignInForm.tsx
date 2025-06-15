@@ -30,8 +30,12 @@ export default function SignInForm() {
       }
 
       router.push("/products")
-    } catch (err: any) {
-      setError(err.message)
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setError(err.message)
+      } else {
+        setError("Une erreur est survenue")
+      }
     } finally {
       setIsLoading(false)
     }
